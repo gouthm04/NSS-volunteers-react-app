@@ -1,10 +1,16 @@
 import React from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import AddVolunteer from './components/AddVolunteer';
+import ViewVolunteers from './components/ViewVolunteers';
 
 function App() {
   return (
-    <div className="container mt-4">
-      <h1>NSS Volunteer Management</h1>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<AddVolunteer />} />
+        <Route path="/view" element={<ViewVolunteers />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
