@@ -1,20 +1,21 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const NavBar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div className="container-fluid">
-        <a className="navbar-brand" href="/">NSS Volunteer System</a>
+      <div className="container">
+        <Link className="navbar-brand" to="/">NSS Volunteer System</Link>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
           <span className="navbar-toggler-icon"></span>
         </button>
         <div className="collapse navbar-collapse" id="navbarNav">
-          <ul className="navbar-nav">
+          <ul className="navbar-nav ms-auto gap-3">
             <li className="nav-item">
-              <a className="nav-link" href="/">Add Volunteer</a>
+              <Link className="nav-link" to="/">Add Volunteer</Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/view">View Volunteers</a>
+              <Link className="nav-link" to="/view">View Volunteers</Link>
             </li>
           </ul>
         </div>

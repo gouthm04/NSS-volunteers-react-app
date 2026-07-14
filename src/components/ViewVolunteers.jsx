@@ -19,7 +19,7 @@ const ViewVolunteers = () => {
   return (
     <div>
       <NavBar />
-      <div className="container mt-4">
+      <div className="container-fluid px-4 mt-4">
         <div className="row">
           <div className="col-12">
             <table className="table table-hover">

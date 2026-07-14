@@ -137,24 +137,43 @@ const AddVolunteer = () => {
 
               <div className="col-md-6">
                 <label className="form-label">Blood Group</label>
-                <input
-                  type="text"
-                  className="form-control"
+                <select
+                  className="form-select"
                   name="bloodGroup"
                   value={input.bloodGroup}
                   onChange={inputHandler}
-                />
+                >
+                  <option value="">Select Blood Group</option>
+                  <option value="A+">A+</option>
+                  <option value="A-">A-</option>
+                  <option value="B+">B+</option>
+                  <option value="B-">B-</option>
+                  <option value="AB+">AB+</option>
+                  <option value="AB-">AB-</option>
+                  <option value="O+">O+</option>
+                  <option value="O-">O-</option>
+                </select>
               </div>
 
               <div className="col-md-6">
                 <label className="form-label">Department</label>
-                <input
-                  type="text"
-                  className="form-control"
+                <select
+                  className="form-select"
                   name="department"
                   value={input.department}
                   onChange={inputHandler}
-                />
+                >
+                  <option value="">Select Department</option>
+                  <option value="Computer Science">Computer Science</option>
+                  <option value="Mechanical">Mechanical</option>
+                  <option value="Civil">Civil</option>
+                  <option value="Electrical">Electrical</option>
+                  <option value="Electronics">Electronics</option>
+                  <option value="Information Technology">Information Technology</option>
+                  <option value="Commerce">Commerce</option>
+                  <option value="Arts">Arts</option>
+                  <option value="Science">Science</option>
+                </select>
               </div>
 
               <div className="col-md-6">
