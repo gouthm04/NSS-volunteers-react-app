@@ -1,9 +1,10 @@
 import React from 'react';
+import AddVolunteer from './components/AddVolunteer';
 
 function App() {
   return (
-    <div className="container mt-4">
-      <h1>NSS Volunteer Management</h1>
+    <div>
+      <AddVolunteer />
     </div>
   );
 }
